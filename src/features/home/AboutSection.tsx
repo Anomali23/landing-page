@@ -9,7 +9,13 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 
-const CardAbout: Array<object> = [
+// Define the type for the CardAbout array
+interface CardInfo {
+  title: string;
+  description: string;
+}
+
+const CardAbout: Array<CardInfo> = [
   {
     title: '2023 Year Established',
     description:
@@ -43,7 +49,8 @@ function AboutSection(): React.ReactElement {
               className="text-lg my-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}>
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               Anomali is dedicated to transforming the consulting landscape with
               innovative solutions. Our mission is to empower businesses through
               tailored services that drive growth and efficiency, ensuring a
@@ -55,7 +62,8 @@ function AboutSection(): React.ReactElement {
               <motion.div
                 key={index}
                 whileHover={{ scale: [null, 0.9, 1.1] }}
-                transition={{ duration: 0.3 }}>
+                transition={{ duration: 0.3 }}
+              >
                 <Card className="bg-white min-h-[190px]">
                   <CardHeader>
                     <CardTitle>{item.title}</CardTitle>
