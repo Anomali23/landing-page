@@ -4,7 +4,6 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-  CardDescription,
 } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { InstagramIcon, LinkedinIcon } from 'lucide-react';

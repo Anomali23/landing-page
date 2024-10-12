@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import useScrambleText from '@/hooks/useScrambleText';
 import { motion } from 'framer-motion';
 import ScrambleText from '../components/ScrambleText';
 

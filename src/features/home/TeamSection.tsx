@@ -57,7 +57,7 @@ const itemVariants = {
   },
 };
 
-function TeamSection() {
+function TeamSection(): React.ReactElement {
   return (
     <div className="w-full h-max bg-slate-50 px-4">
       <div className="container mx-auto py-8 md:py-12 lg:py-20 gap-10">
