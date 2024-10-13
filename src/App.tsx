@@ -8,10 +8,10 @@ function App(): React.ReactElement {
   return (
     <Routes>
       <Route path="/" element={<HomePage />}/>
-      <Route path="/about" element/>
+      {/* <Route path="/about" element/>
       <Route path="/teams" element/>
       <Route path="/faq" element/>
-      <Route path="/blogs" element/>
+      <Route path="/blogs" element/> */}
       <Route path='*' element={<NotFoundPage/>} />
     </Routes>
   )

@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import SectionLayout from '@/layouts/SectionLayout';
 
 // Define the type for the CardAbout array
 interface CardInfo {
@@ -40,7 +41,7 @@ const CardAbout: Array<CardInfo> = [
 
 function AboutSection(): React.ReactElement {
   return (
-    <div className="w-full container mx-auto px-4">
+    <SectionLayout>
       <div className="lg:flex justify-center items-center py-8 md:py-12 lg:py-20 gap-10">
         <div className="flex flex-col gap-4 md:gap-8 w-full">
           <div className="w-full flex flex-col gap-2">
@@ -49,8 +50,7 @@ function AboutSection(): React.ReactElement {
               className="text-lg my-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+              transition={{ duration: 0.6, delay: 0.2 }}>
               Anomali is dedicated to transforming the consulting landscape with
               innovative solutions. Our mission is to empower businesses through
               tailored services that drive growth and efficiency, ensuring a
@@ -63,7 +63,7 @@ function AboutSection(): React.ReactElement {
                 key={index}
                 whileHover={{ scale: [null, 0.9, 1.1] }}
                 transition={{ duration: 0.3 }}
-              >
+                className="flex">
                 <Card className="bg-white min-h-[190px]">
                   <CardHeader>
                     <CardTitle>{item.title}</CardTitle>
@@ -84,7 +84,7 @@ function AboutSection(): React.ReactElement {
           />
         </div>
       </div>
-    </div>
+    </SectionLayout>
   );
 }
 

@@ -5,6 +5,7 @@ import CardMember from '../components/CardMember';
 import TeamsHendri from '@/assets/images/teams/teams_hendri.jpg';
 import TeamsDito from '@/assets/images/teams/teams_dito.jpeg';
 import TeamsDhimas from '@/assets/images/teams/teams_dhimas.jpeg';
+import SectionLayout from '@/layouts/SectionLayout';
 
 const member = [
   {
@@ -59,46 +60,44 @@ const itemVariants = {
 
 function TeamSection(): React.ReactElement {
   return (
-    <div className="w-full h-max bg-slate-50 px-4">
-      <div className="container mx-auto py-8 md:py-12 lg:py-20 gap-10">
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col md:flex-row gap-4 items-center md:justify-between">
-            <div className="flex flex-col gap-2">
-              <motion.h3
-                className="text-3xl text-black font-bold"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}>
-                Our Team
-              </motion.h3>
-              <motion.p
-                className="text-lg font-normal"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}>
-                Discover the talented individuals driving Anomali’s success.
-              </motion.p>
-            </div>
-            <Button className="w-full md:w-auto">Show All</Button>
+    <SectionLayout className="bg-slate-50">
+      <div className="flex flex-col gap-6 md:gap-8 lg:gap-10">
+        <div className="flex flex-col md:flex-row gap-4 items-center md:justify-between">
+          <div className="flex flex-col gap-2">
+            <motion.h3
+              className="text-3xl text-black font-bold"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}>
+              Our Team
+            </motion.h3>
+            <motion.p
+              className="text-lg font-normal"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}>
+              Discover the talented individuals driving Anomali’s success.
+            </motion.p>
           </div>
-          <motion.div
-            className="grid md:grid-cols-3 gap-8"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible">
-            {member.map((item, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: [null, 0.9, 1.1] }}
-                transition={{ duration: 0.3 }}>
-                <CardMember {...item} />
-              </motion.div>
-            ))}
-          </motion.div>
+          <Button className="w-full md:w-auto">Show All</Button>
         </div>
+        <motion.div
+          className="grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible">
+          {member.map((item, index) => (
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              whileHover={{ scale: [null, 0.9, 1.1] }}
+              transition={{ duration: 0.3 }}>
+              <CardMember {...item} />
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
-    </div>
+    </SectionLayout>
   );
 }
 

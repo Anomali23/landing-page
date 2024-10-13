@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import ScrambleText from '../components/ScrambleText';
 
-function MainCard(): React.ReactElement {
+function HeroSection(): React.ReactElement {
   const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
   const hidden = { opacity: 0, y: 20 }; // For the paragraph
 
@@ -52,4 +52,4 @@ function MainCard(): React.ReactElement {
   );
 }
 
-export default MainCard;
+export default HeroSection;

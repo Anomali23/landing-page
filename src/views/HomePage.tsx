@@ -3,6 +3,7 @@ import HeroSection from '@/features/home/HeroSection';
 import React from 'react';
 import AboutSection from '@/features/home/AboutSection';
 import TeamSection from '@/features/home/TeamSection';
+import FAQSection from '../features/home/FAQSection';
 
 function HomePage(): React.ReactElement {
   return (
@@ -10,6 +11,7 @@ function HomePage(): React.ReactElement {
       <HeroSection />
       <AboutSection />
       <TeamSection />
+      <FAQSection />
     </MainLayout>
   );
 }
