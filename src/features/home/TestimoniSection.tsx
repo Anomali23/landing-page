@@ -64,7 +64,7 @@ const testimonials: Testimonials[] = [
 
 function TestimoniSection(): React.ReactElement {
   return (
-    <SectionLayout className="bg-slate-50">
+    <SectionLayout>
       <div className="flex flex-col items-center gap-12 md:gap-16 lg:gap-20">
         <div className="header flex flex-col gap-4 text-center">
           <h3 className="text-3xl font-bold">What Our Client Says</h3>

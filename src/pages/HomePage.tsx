@@ -12,8 +12,8 @@ function HomePage(): React.ReactElement {
       <HeroSection />
       <AboutSection />
       <TeamSection />
-      <FAQSection />
       <TestimoniSection />
+      <FAQSection />
     </MainLayout>
   );
 }

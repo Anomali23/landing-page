@@ -45,7 +45,7 @@ const faqData: FAQInfo[] = [
 
 function FAQSection(): React.ReactElement {
   return (
-    <SectionLayout>
+    <SectionLayout className='bg-slate-50'>
       <div className="flex flex-col gap-6 text-center">
         <div className="flex flex-col gap-4 pb-4">
           <motion.h3
