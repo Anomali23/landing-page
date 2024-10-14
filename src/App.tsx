@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import HomePage from "@/views/HomePage"
+import HomePage from "@/pages/HomePage"
 import React from "react"
-import NotFoundPage from "@/views/NotFoundPage"
+import NotFoundPage from "@/pages/NotFoundPage"
 
 function App(): React.ReactElement {
 

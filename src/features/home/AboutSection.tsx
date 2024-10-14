@@ -16,7 +16,7 @@ interface CardInfo {
   description: string;
 }
 
-const CardAbout: Array<CardInfo> = [
+const CardAbout: CardInfo[] = [
   {
     title: '2023 Year Established',
     description:

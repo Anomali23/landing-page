@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import CardMember from '../components/CardMember';
+import MemberCard from '@/features/components/MemberCard';
 import TeamsHendri from '@/assets/images/teams/teams_hendri.jpg';
 import TeamsDito from '@/assets/images/teams/teams_dito.jpeg';
 import TeamsDhimas from '@/assets/images/teams/teams_dhimas.jpeg';
@@ -92,7 +92,7 @@ function TeamSection(): React.ReactElement {
               variants={itemVariants}
               whileHover={{ scale: [null, 0.9, 1.1] }}
               transition={{ duration: 0.3 }}>
-              <CardMember {...item} />
+              <MemberCard {...item} />
             </motion.div>
           ))}
         </motion.div>

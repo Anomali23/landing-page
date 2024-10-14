@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { InstagramIcon, LinkedinIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-interface CardMemberProps {
+interface MemberCardProps {
   className?: string;
   image: string;
   name: string;
@@ -14,7 +14,7 @@ interface CardMemberProps {
   instagram: string;
 }
 
-function CardMember({
+function MemberCard({
   className,
   image,
   name,
@@ -22,7 +22,7 @@ function CardMember({
   occupation,
   linkedIn,
   instagram,
-}: CardMemberProps): React.ReactElement {
+}: MemberCardProps): React.ReactElement {
   return (
     <Card className={cn('bg-white flex flex-col  md:min-h-[300px] lg:min-h-[420px]', className)}>
       <CardHeader className="pb-0 gap-2 flex-grow">
@@ -53,4 +53,4 @@ function CardMember({
   );
 }
 
-export default CardMember;
+export default MemberCard;

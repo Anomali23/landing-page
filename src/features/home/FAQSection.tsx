@@ -15,7 +15,7 @@ type FAQInfo = {
   description: string;
 };
 
-const faqData: Array<FAQInfo> = [
+const faqData: FAQInfo[] = [
   {
     title: 'What services do you offer?',
     description:
@@ -68,7 +68,7 @@ function FAQSection(): React.ReactElement {
           {faqData.map((item, index) => (
             <Accordion
               key={index}
-              className="w-full lg:w-[unset]"
+              className="w-full lg:w-[unset] text-start"
               type="single"
               collapsible>
               <AccordionItem className="max-w-full" value="item-1">
