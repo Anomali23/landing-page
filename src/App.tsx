@@ -1,20 +1,20 @@
-import { Route, Routes } from "react-router-dom"
-import HomePage from "@/pages/HomePage"
-import React from "react"
-import NotFoundPage from "@/pages/NotFoundPage"
+import { Route, Routes } from 'react-router-dom';
+import HomePage from '@/pages/HomePage';
+import React from 'react';
+import NotFoundPage from '@/pages/NotFoundPage';
+import AboutPage from '@/pages/AboutPage';
 
 function App(): React.ReactElement {
-
   return (
     <Routes>
-      <Route path="/" element={<HomePage />}/>
-      {/* <Route path="/about" element/>
-      <Route path="/teams" element/>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      {/* <Route path="/teams" element/>
       <Route path="/faq" element/>
       <Route path="/blogs" element/> */}
-      <Route path='*' element={<NotFoundPage/>} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
