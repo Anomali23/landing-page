@@ -3,6 +3,7 @@ import MainLayout from '@/layouts/MainLayout';
 import StorySection from '@/features/about/StorySection';
 import MissionSection from '@/features/about/MissionSection';
 import SectionLayout from '@/layouts/SectionLayout';
+import FounderSection from '@/features/about/FounderSection';
 
 function AboutPage(): React.ReactElement {
   return (
@@ -10,6 +11,7 @@ function AboutPage(): React.ReactElement {
       <SectionLayout>
         <StorySection />
         <MissionSection />
+        <FounderSection />
       </SectionLayout>
     </MainLayout>
   );

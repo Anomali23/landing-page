@@ -1,6 +1,6 @@
 import SectionLayout from '@/layouts/SectionLayout';
 import React from 'react';
-import TestimonialCard from '../components/TestimonialCard';
+import TestimonialCard from '../../components/common/TestimonialCard';
 
 interface Testimonials {
   avatar: string;

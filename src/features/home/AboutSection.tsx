@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TypingText } from '../components/TypingText';
+import { TypingText } from '../../components/common/TypingText';
 import {
   Card,
   CardContent,

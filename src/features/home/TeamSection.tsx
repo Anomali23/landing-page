@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import MemberCard from '@/features/components/MemberCard';
+import MemberCard from '@/components/common/MemberCard';
 import TeamsHendri from '@/assets/images/teams/teams_hendri.jpg';
 import TeamsDito from '@/assets/images/teams/teams_dito.jpeg';
 import TeamsDhimas from '@/assets/images/teams/teams_dhimas.jpeg';

@@ -1,21 +1,19 @@
-import Footer from '@/features/components/Footer'
-import Navbar from '@/features/components/Navbar'
-import React from 'react'
+import Footer from '@/components/common/Footer';
+import Navbar from '@/components/common/Navbar';
+import React from 'react';
 
 type MainLayoutProps = {
-    children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="min-h-screen">
-        <Navbar />
-        <main className='flex-grow'>
-            {children}
-        </main>
-        <Footer />
+      <Navbar />
+      <main className="flex-grow">{children}</main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default MainLayout
+export default MainLayout;

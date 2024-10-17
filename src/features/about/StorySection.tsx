@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import TimelineEvent from '../components/TimelineEvent';
+import TimelineEvent from '@/components/common/TimelineEvent';
 import { Rocket } from 'lucide-react';
 
 function StorySection(): React.ReactElement {
@@ -17,8 +17,8 @@ function StorySection(): React.ReactElement {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <h3 className="text-3xl lg:text-4xl font-bold mb-4 text-center">
-          Our Story
+        <h3 className="text-3xl font-bold text-start mb-4">
+          Our Journey
         </h3>
         <div className="grid md:grid-cols-2 gap-8">
           <Card>
@@ -42,7 +42,7 @@ function StorySection(): React.ReactElement {
           </Card>
           <img
             alt="Anomali's journey"
-            className="transition-transform duration-300 object-cover border-border dark:border-darkBorder border-2 shadow-light dark:shadow-dark min-h-[300px]"
+            className="transition-transform duration-300 object-cover border-border dark:border-darkBorder border-2 shadow-light dark:shadow-dark min-h-[300px] rounded-base"
           />
         </div>
       </div>
