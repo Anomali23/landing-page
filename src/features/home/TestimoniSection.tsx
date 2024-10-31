@@ -1,3 +1,4 @@
+"use client";
 import SectionLayout from '@/layouts/SectionLayout';
 import React from 'react';
 import TestimonialCard from '../../components/common/TestimonialCard';

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TypingText } from '../../components/common/TypingText';
@@ -43,7 +44,7 @@ const CardAbout: CardInfo[] = [
 function AboutSection(): React.ReactElement {
   return (
     <SectionLayout>
-      <div className="lg:flex justify-center items-center py-8 md:py-12 lg:py-20 gap-10">
+      <div className="xl:flex justify-center items-center py-8 md:py-12 lg:py-20 gap-10">
         <div className="flex flex-col gap-4 md:gap-8 w-full">
           <div className="w-full flex flex-col gap-2">
             <TypingText text="About Anomali" className="text-4xl font-bold" />
@@ -79,11 +80,11 @@ function AboutSection(): React.ReactElement {
         </div>
         <div className="flex justify-center w-full ">
           <Image
-            src="https://10web-site.ai/198/wp-content/uploads/sites/210/2024/10/tenweb_media_shZUl4ZB.webp"
+            src="https://th.bing.com/th/id/R.a4cd1faad8666a915049eafa18783e0f?rik=%2f0x9W7vFE0%2fLVg&riu=http%3a%2f%2fonline.hbs.edu%2fStyle+Library%2fapi%2fresize.aspx%3fimgpath%3d%2fPublishingImages%2foverhead-view-of-business-strategy-meeting.jpg%26w%3d1200%26h%3d630&ehk=dO1x1rlHwFFucAdWOY23Y2SDTsWtpkh7d7E99RBae1c%3d&risl=&pid=ImgRaw&r=0"
             width={600}
             height={600}
             alt="About Anomali"
-            className="rounded-3xl hidden lg:block lg:w-[600px] lg:h-[600px] object-cover"
+            className="rounded-3xl items-end my-auto hidden xl:block xl:w-[600px] xl:h-[600px] object-cover"
           />
         </div>
       </div>

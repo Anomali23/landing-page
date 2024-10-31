@@ -1,7 +1,10 @@
+'use client';
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import ScrambleText from '../../components/common/ScrambleText';
+import { Button } from '@/components/ui/button';
+import ScrambleText from '@/components/common/ScrambleText';
+import DotPattern from '../../components/ui/dot-pattern';
+import { cn } from '@/lib/utils';
 
 function HeroSection(): React.ReactElement {
   const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
@@ -18,7 +21,12 @@ function HeroSection(): React.ReactElement {
   };
 
   return (
-    <div className="h-[40rem] w-full dark:bg-black bg-slate-50 dark:bg-dot-white/[0.3] bg-dot-black/[0.3] relative flex items-center justify-center">
+    <div className="relative flex h-[40rem] w-full flex-col items-center justify-center overflow-hidden bg-slate-50">
+      <DotPattern
+        className={cn(
+          "[mask-image:radial-gradient(640px_circle_at_center,white,transparent)]",
+        )}
+      />
       <div className="flex flex-col gap-4 text-black items-center text-center h-full justify-center relative">
         <ScrambleText originalText="Welcome to Anomali" />
         <motion.p

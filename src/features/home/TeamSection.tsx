@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -82,7 +83,7 @@ function TeamSection(): React.ReactElement {
           <Button className="w-full md:w-auto">Show All</Button>
         </div>
         <motion.div
-          className="grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+          className="grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 justify-items-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible">
